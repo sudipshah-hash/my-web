@@ -1,0 +1,31 @@
+body{
+    margin:3%;
+    font-family: 'Venite Adoremus', sans-serif;
+    color: aliceblue;
+    background-color: black;
+    background-size: contain;
+}
+
+.nevbar {
+    font-size: small;
+    display:flex;
+    gap: 30px;
+    padding-top: 10px;
+}
+
+.navigator{  \-/* Underline */
+  gap: 20px;
+  font-size: 3vh;
+  background-image:radial-gradient(circle,
+   rgba(255, 255, 255, 0.445) 89%,
+   black 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 50% 100%; 
+  padding-bottom: 3px;        
+}
+
+.navigator:hover{
+    background-size: 100% 6%;
+    background-image: linear-gradient(to right, transparent, red, transparent);
+}
