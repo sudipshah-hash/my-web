@@ -1,31 +1,81 @@
-body{
-    margin:3%;
-    font-family: 'Venite Adoremus', sans-serif;
-    color: aliceblue;
-    background-color: black;
-    background-size: contain;
+:root {
+  font-size: 100%; /* 16px by default in most browsers */
 }
 
-.nevbar {
-    font-size: small;
-    display:flex;
-    gap: 30px;
-    padding-top: 10px;
+html, body {
+  height: 100%;
 }
 
-.navigator{  \-/* Underline */
-  gap: 20px;
-  font-size: 3vh;
-  background-image:radial-gradient(circle,
-   rgba(255, 255, 255, 0.445) 89%,
-   black 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 2px;
-  background-position: 50% 100%; 
-  padding-bottom: 3px;        
+body {
+  margin: 0;
+  font-family: 'Venite Adoremus', sans-serif;
+  color: aliceblue;
+  background-color: black;
+  background-size: contain;
 }
 
-.navigator:hover{
-    background-size: 100% 6%;
-    background-image: linear-gradient(to right, transparent, red, transparent);
+.navbar {
+  position: sticky;
+  font-size:0.9.5rem ;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 0rm;
+  padding: 1rem 0rem;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(12px);
+  z-index: 100;
+}
+
+.navigator { /* Underline */
+  position: relative;
+  flex: 0 1 auto;
+  padding: 0.35rem 0.35rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  background: transparent;
+  transition: color 150ms ease, opacity 150ms ease;
+}
+
+.navigator::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.45);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 160ms ease;
+}
+
+.navigator:hover {
+  color: white;
+  opacity: 1;
+}
+
+.navigator:hover::after {
+  transform: scaleX(1);
+}
+
+.navigator:hover {
+  background-size: 100% 6%;
+  background-image: linear-gradient(to right, transparent, red, transparent);
+}
+
+@media (max-width: 550px) {
+  .navigator {
+    font-size: 0.6rem;
+    gap: 2px;
+  }
+}
+
+@media(min-width: 551px) and (max-width: 1024px) {
+  .navigator {
+    font-size: 0.7.5rem;
+    gap: 0.1rem;
+  }
 }
