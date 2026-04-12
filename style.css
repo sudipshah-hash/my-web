@@ -1,12 +1,12 @@
 :root {
   --bg-black: #020203;
-  --accent-red: #ff2b2b;
-  --accent-red-glow: rgba(255, 43, 43, 0.4);
+  --accent-red: #00ff85;
+  --accent-red-glow: rgba(0, 255, 133, 0.38);
   --text-primary: #f5f5f7;
-  --text-muted: #86868b;
-  --panel-bg: rgba(10, 10, 12, 0.8);
-  --border-color: rgba(255, 43, 43, 0.15);
-  --grid-color: rgba(255, 43, 43, 0.03);
+  --text-muted: #8aa091;
+  --panel-bg: rgba(7, 16, 11, 0.82);
+  --border-color: rgba(0, 255, 133, 0.16);
+  --grid-color: rgba(0, 255, 133, 0.05);
   --transition-smooth: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
   --font-main: "Space Grotesk", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
@@ -64,7 +64,7 @@ body.loading {
   left: 0;
   width: 100%;
   height: 4px;
-  background: rgba(255, 43, 43, 0.05);
+  background: rgba(0, 255, 133, 0.08);
   opacity: 0.5;
   animation: scanline 8s linear infinite;
 }
@@ -76,7 +76,7 @@ body.loading {
   transform: translate(-50%, -50%);
   width: 100vw;
   height: 100vh;
-  background: radial-gradient(circle at center, rgba(255, 43, 43, 0.03) 0%, transparent 70%);
+  background: radial-gradient(circle at center, rgba(0, 255, 133, 0.05) 0%, transparent 70%);
 }
 
 @keyframes scanline {
@@ -230,7 +230,10 @@ h1, h2, h3 {
   opacity: 1;
   transform: scale(1);
   transition: opacity 0.4s ease-out; /* 0.4s fade requirement */
-  text-shadow: 0 0 50px var(--accent-red-glow);
+  text-shadow:
+    0 0 12px rgba(0, 255, 133, 0.34),
+    0 0 42px rgba(0, 255, 133, 0.18);
+  letter-spacing: 0.08em;
 }
 
 /* Updated Reveal Layout for Framing */
@@ -267,9 +270,12 @@ h1, h2, h3 {
   font-size: clamp(1.7rem, 4.25vw, 3.4rem);
   margin-bottom: 1.5rem;
   color: var(--accent-red);
-  text-shadow: 0 0 20px var(--accent-red-glow);
+  text-shadow:
+    0 0 10px rgba(0, 255, 133, 0.32),
+    0 0 24px rgba(0, 255, 133, 0.15);
   font-weight: 800;
   text-align: center;
+  letter-spacing: 0.14em;
 }
 
 .profile-frame {
@@ -279,7 +285,7 @@ h1, h2, h3 {
   margin: 0 auto;
   border: 2px solid var(--accent-red);
   padding: 5px;
-  background: var(--bg-black);
+  background: linear-gradient(180deg, rgba(0, 255, 133, 0.08), rgba(2, 2, 3, 0.88));
   box-shadow: 0 0 40px var(--accent-red-glow);
   transform: scale(0.8);
   z-index: 20; /* Ensure profile is above hands */
@@ -390,6 +396,13 @@ h1, h2, h3 {
   animation: glitch 3s infinite;
 }
 
+.glitch-title,
+.dash-name {
+  text-shadow:
+    0 0 10px rgba(0, 255, 133, 0.32),
+    0 0 24px rgba(0, 255, 133, 0.14);
+}
+
 @keyframes glitch {
   0% { transform: translate(0); }
   2% { transform: translate(-5px, 2px); }
@@ -403,6 +416,7 @@ h1, h2, h3 {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
 }
 
 .terminal-header {
@@ -431,6 +445,9 @@ h1, h2, h3 {
   padding: 2rem;
   font-family: var(--font-mono);
   min-height: 300px;
+  background:
+    linear-gradient(180deg, rgba(0, 255, 133, 0.03), transparent 25%),
+    rgba(3, 8, 5, 0.86);
 }
 
 .terminal-line {
@@ -438,6 +455,7 @@ h1, h2, h3 {
   opacity: 0;
   transform: translateX(-20px);
   color: var(--text-muted);
+  text-shadow: 0 0 10px rgba(0, 255, 133, 0.1);
 }
 
 .terminal-line.active {
