@@ -1,23 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudip Shah | Cybersecurity Elite Portfolio</title>
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
 </head>
+<body class="loading">
 
+  <!-- Core Background Elements -->
+  <div class="cinematic-bg">
+    <div class="grid-overlay"></div>
+    <div class="scanline"></div>
+    <div class="ambient-glow"></div>
+  </div>
 
-<body>
-    
- <nav class="navbar">
-      
-         <div class="home navigator">Home</div>
-         <div class="toutrials navigator">Toutrials</div>
-         <div class="resources navigator">Resources</div>
-         <div class="about navigator">About</div>
-     
+  <!-- Custom Cursor -->
+  <div class="cursor-system" id="cursor-system">
+    <div class="cursor-dot" id="cursor-dot"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="cyber-nav">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">S.SHAH <span class="status-dot"></span></a>
+      <div class="nav-links">
+        <a href="#work" class="nav-item">Archive</a>
+        <a href="#certificates" class="nav-item">Certificates</a>
+        <a href="#gallery" class="nav-item">Gallery</a>
+        <a href="#resume" class="nav-item">Resume</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </div>
+    </div>
   </nav>
+
+  <main id="smooth-wrapper">
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-inner">
+        <h1 class="hero-title" data-reveal="hero">Hello</h1>
+      </div>
+    </section>
+
+    <!-- Scroll Reveal Scene -->
+    <section class="reveal-section" id="work">
+      <div class="reveal-sticky">
+        <div class="reveal-container">
+          <!-- Hands -->
+          <img src="lefthand.png" alt="" class="cyber-hand hand-left" id="hand-left">
+          <img src="righthand.png" alt="" class="cyber-hand hand-right" id="hand-right">
+
+          <!-- Profile Content -->
+          <div class="profile-reveal" id="profile-content">
+            <h2 class="reveal-name" id="reveal-name">Sudip Shah</h2>
+            <div class="profile-frame">
+              <img src="ultra-detailed-digital-artwork-of-a-_lwop6I4ARuW5tmpZ1tK1LA_lryVbnMxTqW-ChM71ijBdQ.jpeg" alt="Sudip Shah" class="profile-img">
+              <div class="frame-glitch"></div>
+            </div>
+            <div class="profile-text">
+              <p class="reveal-bio" id="reveal-bio">
+                Systems Architect & Cybersecurity Researcher. Specializing in low-level security, 
+                network hardening, and resilient digital infrastructure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Identity Section -->
+    <section class="identity-section section-padding">
+      <div class="container">
+        <div class="identity-header">
+          <p class="kicker">01 // IDENTITY</p>
+          <h2 class="glitch-title" data-text="Breaking Systems. Securing Futures.">Breaking Systems. Securing Futures.</h2>
+        </div>
+        <div class="terminal-container">
+          <div class="terminal-header">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="terminal-title">system_manifest.exe</span>
+          </div>
+          <div class="terminal-body" id="identity-terminal">
+            <p class="terminal-line">Initializing core values...</p>
+            <p class="terminal-line">I am a Cybersecurity student driven by the logic of how things break.</p>
+            <p class="terminal-line">Expertise in Linux administration, low-level C programming, and network security.</p>
+            <p class="terminal-line">Building systems from the kernel up to ensure total resilience.</p>
+            <p class="terminal-line">Resilience isn't a feature—it's the foundation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificates-section section-padding" id="certificates">
+      <div class="container">
+        <div class="section-header">
+          <p class="kicker">02 // CREDENTIALS</p>
+          <h2 class="section-title">Verified Access</h2>
+        </div>
+        <div class="cert-grid">
+          <div class="cert-item" data-stagger="cert">
+            <div class="cert-card">
+              <img src="ultra-detailed-digital-artwork-of-a-sing_lwop6I4ARuW5tmpZ1tK1LA_lryVbnMxTqW-ChM71ijBdQ.jpeg" alt="Cert" class="cert-thumb">
+              <div class="cert-info">
+                <span class="cert-tag">SEC-01</span>
+                <h3 class="cert-title">Advanced Security Analyst</h3>
+              </div>
+            </div>
+          </div>
+          <div class="cert-item" data-stagger="cert">
+            <div class="cert-card">
+              <img src="ultra-detailed-digital-artwork-of-a-sing_lwop6I4ARuW5tmpZ1tK1LA_lryVbnMxTqW-ChM71ijBdQ.jpeg" alt="Cert" class="cert-thumb">
+              <div class="cert-info">
+                <span class="cert-tag">NET-04</span>
+                <h3 class="cert-title">Network Defense Professional</h3>
+              </div>
+            </div>
+          </div>
+          <div class="cert-item" data-stagger="cert">
+            <div class="cert-card">
+              <img src="ultra-detailed-digital-artwork-of-a-sing_lwop6I4ARuW5tmpZ1tK1LA_lryVbnMxTqW-ChM71ijBdQ.jpeg" alt="Cert" class="cert-thumb">
+              <div class="cert-info">
+                <span class="cert-tag">ETH-02</span>
+                <h3 class="cert-title">Certified Ethical Hacker</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section section-padding">
+      <div class="container">
+        <div class="skills-layout">
+          <div class="skills-info">
+            <p class="kicker">03 // STACK</p>
+            <h2 class="section-title">Technical Proficiency</h2>
+            <div class="learning-chips">
+              <span class="chip">Wireshark</span>
+              <span class="chip">Metasploit</span>
+              <span class="chip">Kernel Dev</span>
+              <span class="chip">Forensics</span>
+            </div>
+          </div>
+          <div class="skills-bars">
+            <div class="skill-row" data-skill="92">
+              <div class="skill-label"><span>C / C++</span><span>92%</span></div>
+              <div class="skill-track"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-row" data-skill="85">
+              <div class="skill-label"><span>JAVA</span><span>85%</span></div>
+              <div class="skill-track"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-row" data-skill="95">
+              <div class="skill-label"><span>HTML/CSS</span><span>95%</span></div>
+              <div class="skill-track"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-row" data-skill="88">
+              <div class="skill-label"><span>JAVASCRIPT</span><span>88%</span></div>
+              <div class="skill-track"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-row" data-skill="82">
+              <div class="skill-label"><span>SQL</span><span>82%</span></div>
+              <div class="skill-track"><div class="skill-fill"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section section-padding" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <p class="kicker">04 // ARCHIVE</p>
+          <h2 class="section-title">Visual Research</h2>
+        </div>
+        <div class="gallery-masonry">
+          <div class="gallery-box" data-stagger="gallery"><img src="ultra-detailed-digital-artwork-of-a-sing_lwop6I4ARuW5tmpZ1tK1LA_lryVbnMxTqW-ChM71ijBdQ.jpeg" alt="Work"></div>
+          <div class="gallery-box" data-stagger="gallery"><img src="ultra-detailed-digital-artwork-of-a-sing_lwop6I4ARuW5tmpZ1tK1LA_lryVbnMxTqW-ChM71ijBdQ.jpeg" alt="Work"></div>
+          <div class="gallery-box" data-stagger="gallery"><img src="ultra-detailed-digital-artwork-of-a-sing_lwop6I4ARuW5tmpZ1tK1LA_lryVbnMxTqW-ChM71ijBdQ.jpeg" alt="Work"></div>
+          <div class="gallery-box" data-stagger="gallery"><img src="ultra-detailed-digital-artwork-of-a-sing_lwop6I4ARuW5tmpZ1tK1LA_lryVbnMxTqW-ChM71ijBdQ.jpeg" alt="Work"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume-section section-padding" id="resume">
+      <div class="container">
+        <div class="resume-dashboard">
+          <div class="dashboard-left">
+            <h2 class="dash-name">Sudip Shah</h2>
+            <p class="dash-role">Cybersecurity Engineer</p>
+            <p class="dash-bio">Building the future of secure architecture with a focus on offensive research and defensive implementation.</p>
+            <div class="dash-status">
+              <span class="status-icon"></span> Available for HIRE
+            </div>
+          </div>
+          <div class="dashboard-right">
+            <div class="timeline-container">
+              <div class="timeline-line" id="timeline-line"></div>
+              
+              <div class="timeline-item">
+                <div class="node"></div>
+                <div class="item-content">
+                  <span class="item-date">2024 — PRESENT</span>
+                  <h3 class="item-title">Security Research Lead</h3>
+                  <p class="item-desc">Leading localized security audits and contributing to open-source hardening tools.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="node"></div>
+                <div class="item-content">
+                  <span class="item-date">2023 — 2024</span>
+                  <h3 class="item-title">Cybersecurity Degree</h3>
+                  <p class="item-desc">In-depth focus on network protocols, cryptography, and penetration testing methodologies.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="node"></div>
+                <div class="item-content">
+                  <span class="item-date">2022 — 2023</span>
+                  <h3 class="item-title">Linux Systems Intern</h3>
+                  <p class="item-desc">Managed server deployments and implemented automated backup scripts in Bash/Python.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="container">
+        <div class="hire-layout">
+          <div class="hire-copy">
+            <h2 class="hire-title">Hire Me</h2>
+            <p class="hire-text">Ready to secure your infrastructure? Let's talk about your next project.</p>
+            <a href="https://wa.me/9779846800040" class="whatsapp-link">
+              <span class="pulse"></span> +977 98468 00040
+            </a>
+          </div>
+          <form class="hire-form" id="contact-form">
+            <div class="form-group"><input type="text" placeholder="IDENTITY" required></div>
+            <div class="form-group"><input type="email" placeholder="ENCRYPTED EMAIL" required></div>
+            <div class="form-group"><textarea rows="5" placeholder="MISSION BRIEFING" required></textarea></div>
+            <button type="submit" class="cyber-button">TRANSMIT DATA</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-close">&times;</div>
+    <img src="" alt="Zoom" class="lightbox-img">
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
